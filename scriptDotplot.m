@@ -19,7 +19,7 @@ elseif strcmp(way,'file')
     FastaSet1 = loadFasta(way, filename); 
 elseif strcmp(way,'ncbi')
     identifier = input('identifier: ','s');
-    FastaSet1 = loadFasta(way); 
+    FastaSet1 = loadFasta(way, identifier); 
 end
 fprintf('First sequence import succesfully\n\n');
 
@@ -39,7 +39,7 @@ elseif strcmp(way,'file')
     FastaSet2 = loadFasta(way, filename); 
 elseif strcmp(way,'ncbi')
     identifier = input('identifier: ','s');
-    FastaSet2 = loadFasta(way); 
+    FastaSet2 = loadFasta(way, identifier); 
 end
 
 fprintf('Second sequence import succesfully\n\n');
